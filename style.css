@@ -74,7 +74,12 @@ h1, h3 {
 
 h6 {
     color: white;
-
+}
+.A4_allroad {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    transform: translate(-50%, -50%);
 }
 
 
