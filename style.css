@@ -1,35 +1,44 @@
 * {
-
-
     box-sizing: border-box;
 }
 
 html, body {
     min-height: 100%;
     height: 100%;
-
 }
 
 body {
-    width: 100%;
-    max-width: 1400px;
-    display: block;
-    min-height: 100vh;
+    margin: 0;
     background: black;
-    font-family: sans-serif;
+}
+
+main {
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 20px;
+    min-height: 100vh;
     margin-left: auto;
     margin-right: auto;
-    border-left: 100px;
-    border-right: 100px;
+}
+
+
+header {
+    background-image: url("https://cdn.audi.ua/media/Theme_Banners_Banner_Image_Component/59042-banner-350246-image/dh-1920-918e09/d02c10ea/1657272175/stage.jpg");
+    background-position: center;
+    background-size: auto 100%;
+    min-height: 600px;
 }
 
 .navbar {
-    width: 100%;
-    left: 0;
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9;
     background: darkgray;
 }
 
@@ -43,8 +52,8 @@ body {
     opacity: 0.5;
     text-decoration: none;
     text-transform: capitalize;
-    padding: 10px 30px;
-    margin: 0 20px;
+    padding: 30px 30px;
+    margin: 20px 20px;
     line-height: 80px;
     transition: 0.5s;
     font-size: 20px;
@@ -65,7 +74,7 @@ h2 {
 
 h1, h3 {
     color: white;
-    text-align: center;
+    /*text-align: center;*/
 }
 
 #img_1, #img_2, #img_3, #img_4 {
@@ -75,11 +84,139 @@ h1, h3 {
 h6 {
     color: white;
 }
-.A4_allroad {
-    position: absolute;
-    top: 10%;
-    left: 30%;
-    transform: translate(-50%, -50%);
+
+.page-title {
+    max-width: 50%;
+    margin-left: 200px;
+    padding: 150px 0;
+    /*position: absolute;*/
+    /*top: 10%;*/
+    /*left: 30%;*/
+    /*transform: translate(-50%, -50%);*/
 }
 
+.page-title h1 {
+    margin: 0;
+}
 
+/*#button_1, #button_2, #button_3, #button_4 {*/
+/*    padding: 0;*/
+/*    border: 0;*/
+/*    margin: 0;*/
+/*    background: darkgray;*/
+/*}*/
+
+
+.valokan-close {
+    color: #232222;
+    font-size: 30px;
+    text-decoration: none;
+    padding: 10px;
+    position: absolute;
+    right: 7px;
+    top: 0;
+}
+
+.valokan-close:hover {
+    color: #888888;
+    cursor: pointer;
+}
+
+.kadobagud:before {
+    content: "";
+    display: none;
+    background: darkgray(48, 48, 51);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+.midsalod:before {
+    display: block;
+}
+
+.midsalod .angebes-koverla {
+    transform: translate(0, 0);
+    top: 20%;
+}
+
+.angebes-koverla {
+    background: #fefefe;
+    border: #232222 solid 0px;
+    border-radius: 5px;
+    margin-left: -200px;
+    text-align: center;
+    position: fixed;
+    left: 35%;
+    z-index: 11;
+    width: 800px;
+    height: 730px;
+    box-shadow: 0 5px 10px rgba(25, 24, 24, 0.3);
+    transform: translate(0, -500%);
+    transition: transform 0.3s ease-out;
+}
+
+.davasgu-kevanud {
+    padding: 20px;
+}
+
+.davasgu-kevanud input {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    color: #888;
+    outline: 0;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.doveacko-gangeroun,
+.kusane-avasgun {
+    padding: 10px 20px;
+}
+
+.doveacko-gangeroun {
+    border-bottom: #eeeeee solid 1px;
+}
+
+.doveacko-gangeroun {
+    font-size: 20px;
+}
+
+p {
+    margin: 0;
+}
+
+#text_Tech_1 {
+    text-align: center;
+    color: black;
+}
+
+.technik {
+    background: white;
+    padding: 40px;
+}
+
+#text_Tech_2 {
+    text-align: center;
+    color: black
+}
+
+#text_Tech_3 {
+    color: black;
+    text-align: center;
+}
+
+#text_Tech_4, #text_Tech_5, #text_Tech_7, #text_Tech_6 {
+    color: black;
+}
+
+.DVS {
+    background: #d2d1d1;
+    margin: 1px;
+    padding: 10px;
+}
