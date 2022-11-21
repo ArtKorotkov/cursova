@@ -47,7 +47,7 @@ header {
     display: flex;
 }
 
-.link a {
+.link a{
     color: #ffffff;
     opacity: 0.5;
     text-decoration: none;
@@ -67,7 +67,7 @@ h2 {
 
 
 .link a:hover,
-.link.active a {
+.link.active a{
     opacity: 1;
 }
 
@@ -226,3 +226,10 @@ footer{
 .footer{
     color: white;
 }
+@media (min-width: 900px)  {
+/*@media (min-width: 900px) and (orientation: landscape) {*/
+    *{
+
+    }
+}
+
