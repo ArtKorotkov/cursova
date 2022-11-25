@@ -16,6 +16,15 @@ main {
     position: relative;
 }
 
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+}
+
 .container {
     width: 100%;
     max-width: 100%;
@@ -23,6 +32,10 @@ main {
     min-height: 100vh;
     margin-left: auto;
     margin-right: auto;
+}
+
+.text_group {
+    text-align: center;
 }
 
 
@@ -37,9 +50,10 @@ header {
     position: sticky;
     top: 0;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    background: darkgray;
+    background: #232222;
+    height: 60px;
 }
 
 .link-group {
@@ -47,7 +61,7 @@ header {
     display: flex;
 }
 
-.link a{
+.link a, .link_1 a {
     color: #ffffff;
     opacity: 0.5;
     text-decoration: none;
@@ -67,7 +81,7 @@ h2 {
 
 
 .link a:hover,
-.link.active a{
+.link.active a {
     opacity: 1;
 }
 
@@ -77,7 +91,7 @@ h1, h3 {
     /*text-align: center;*/
 }
 
-#img_1, #img_2, #img_3, #img_4 {
+#img_1, #img_2, #img_3, #img_4, #img_5 {
     width: 100%;
 }
 
@@ -198,7 +212,8 @@ p {
 
 .technik {
     background: white;
-    padding: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #text_Tech_2 {
@@ -215,21 +230,83 @@ p {
     color: black;
 }
 
-.DVS {
+.dvs {
     background: #d2d1d1;
     margin: 1px;
     padding: 10px;
 }
-footer{
-    padding: 10px;
+
+footer {
+    padding: 20px;
 }
-.footer{
+
+.footer {
     color: white;
 }
-@media (min-width: 900px)  {
-/*@media (min-width: 900px) and (orientation: landscape) {*/
-    *{
+
+@media (min-width: 900px) {
+    /*@media (min-width: 900px) and (orientation: landscape) {*/
+    * {
 
     }
 }
 
+.colors {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.color_item {
+    padding: 10px;
+}
+
+.color_item img {
+    transition: 0.5s;
+    /*transition: box-shadow 0.3s ease-in, transform 0.5s linear;*/
+}
+
+.color_item img:hover {
+    cursor: pointer;
+    box-shadow: 7px 8px 20px 0 #000;
+    transform: scale(1.5);
+}
+
+.color_item.active img {
+    transform: scale(1.1);
+}
+
+.rims {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.audi_color_group {
+    background: white;
+}
+
+
+.d-flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.rims_item {
+    padding: 10px;
+}
+
+.rims_item ing {
+    ransition: 0.5s;
+}
+
+.rims_item img:hover {
+    cursor: pointer;
+
+    transform: scale(1.0);
+}
+
+.rims_item.active img {
+    transform: scale(1.2);
+}
