@@ -2,7 +2,7 @@ $('.gabarytu, .closemodal').click(function (e) {
     e.preventDefault();
     $('.kadobagud').toggleClass('midsalod');
 });
-// $('.closemodal').click(function (e) {
+// $('.close modal').click(function (e) {
 //     e.preventDefault();
 //     $('.kadobagud').removeClass('midsalod');
 // });
@@ -18,3 +18,4 @@ colors.forEach((color) => {
         mainImg.setAttribute('src', color.getAttribute('main-src'))
     })
 })
+
