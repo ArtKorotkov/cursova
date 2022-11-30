@@ -8,41 +8,59 @@ html, body {
 }
 
 body {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
-    background: black;
+    /*background: black;*/
+    color: #fff;
 }
 
 main {
+    background-color: #000;
     position: relative;
+    margin-bottom: 50px;
 }
 
 img {
     max-width: 100%;
+    min-width: 100%;
 }
 
-.container {
-    width: 10%;
-
+p {
+    margin: 0;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 2em;
+}
+
+/*------------------------------------------------------------*/
 
 .container {
     width: 100%;
-    max-width: 100%;
-    min-height: 100vh;
+    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.text_group {
-    text-align: center;
+.section {
+    padding: 50px 0 0;
 }
 
+
+.section-text {
+    margin-bottom: 50px;
+}
 
 .page-title {
     background-image: url("https://cdn.audi.ua/media/Theme_Banners_Banner_Image_Component/59042-banner-350246-image/dh-1920-918e09/d02c10ea/1657272175/stage.jpg");
     background-position: center;
     background-size: auto 100%;
     min-height: 600px;
+}
+
+.page-title h1 {
+    margin: 0;
 }
 
 .navbar {
@@ -71,12 +89,11 @@ img {
     font-size: 20px;
 }
 
-h2 {
-    color: #ffffff;
-    align-items: center;
-    top: 0;
-    text-align: center;
-}
+/*h2 {*/
+/*    align-items: center;*/
+/*    top: 0;*/
+/*    text-align: center;*/
+/*}*/
 
 
 .link a:hover,
@@ -84,31 +101,24 @@ h2 {
     opacity: 1;
 }
 
+/*h1, h3 {*/
+/*    text-align: center;*/
+/*}*/
 
-h1, h3 {
-    color: white;
-    text-align: center;
-}
-
-#img_1, #img_2, #img_3, #img_4, #img_5 {
-    width: 100%;
-}
-
-h6 {
-    color: white;
-}
+/*#img_1, #img_2, #img_3, #img_4, #img_5 {*/
+/*    width: 100%;*/
+/*}*/
 
 .page-title {
-    max-width: 100%;
-    margin-left: 1px;
-    padding-right: 999px;
-    padding-top: 200px;
-
+    /*max-width: 100%;*/
+    /*margin-left: 1px;*/
+    /*padding-right: 999px;*/
+    /*padding-top: 200px;*/
+    padding: 300px 0;
+    font-size: 55px;
+    line-height: 35px;
 }
 
-.page-title h1 {
-    margin: 0;
-}
 
 /*#button_1, #button_2, #button_3, #button_4 {*/
 /*    padding: 0;*/
@@ -198,32 +208,10 @@ h6 {
     font-size: 20px;
 }
 
-p {
-    margin: 0;
-}
-
-#text_Tech_1 {
-    text-align: center;
-    color: black;
-}
-
-.technik {
+.section.technik {
     background: white;
+    color: #181818;
     max-width: 100%;
-}
-
-#text_Tech_2 {
-    text-align: center;
-    color: black
-}
-
-#text_Tech_3 {
-    color: black;
-    text-align: center;
-}
-
-#text_Tech_4, #text_Tech_5, #text_Tech_7, #text_Tech_6 {
-    color: black;
 }
 
 .dvs {
@@ -233,11 +221,10 @@ p {
 }
 
 footer {
+    background-color: #000;
     padding: 20px;
-}
-
-.footer {
-    color: white;
+    font-size: 14px;
+    color: #fff;
 }
 
 @media (min-width: 900px) {
@@ -285,7 +272,6 @@ footer {
     justify-content: center;
 }
 
-
 .modal {
     position: fixed;
     width: 100%;
@@ -308,7 +294,6 @@ footer {
     max-width: 600px;
     width: 100%;
     padding: 20px;
-
 }
 
 .modal_window, .modal:target {
@@ -374,18 +359,12 @@ footer {
     position: absolute;
 }
 
-p {
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
+/*p {*/
+/*    color: white;*/
+/*    text-align: center;*/
+/*    padding: 10px;*/
+/*}*/
 
 .view_text_gabarity_1 {
     color: black;
 }
-
-
-
-
-
-
