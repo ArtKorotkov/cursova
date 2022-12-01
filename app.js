@@ -1,12 +1,12 @@
-$('.gabarytu, .closemodal').click(function (e) {
-    e.preventDefault();
-    $('.kadobagud').toggleClass('midsalod');
-});
-// $('.close modal').click(function (e) {
-//     e.preventDefault();
-//     $('.kadobagud').removeClass('midsalod');
-// });
+const gabarytu = $('a.gabarytu')
 
+gabarytu.click(function () {
+    $('#gabarity').css('display', 'flex')
+})
+
+$('#gabarity .close').click(function () {
+    $('#gabarity').css('display', 'no')
+})
 
 const colors = document.querySelectorAll('.color_item')
 const mainImg = document.querySelector('.main_img img')
