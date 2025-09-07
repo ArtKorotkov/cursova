@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .page-title {
-    background-image: url("https://cdn.audi.ua/media/Theme_Banners_Banner_Image_Component/59042-banner-350246-image/dh-1920-918e09/d02c10ea/1657272175/stage.jpg");
+    background-image: url("img/stage.jpg");
     background-position: center;
     background-size: auto 100%;
     min-height: 600px;
